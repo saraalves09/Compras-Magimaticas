@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cartas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/2.TelaEscolha.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="nav">
+                <a href="Manual.html" target="blank" id="manual">Manual</a>
+                <a href="./Index.html" id="encerrar">Encerrar partida</a>
+            </div>
+        </div>
+        <div class="row" id="cartas">
+            <div id="esquerdo" class="col-6">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front" id="frontDesafio">
+                            <p>Desafio</p>
+                        </div>
+                        <div id="backDesafio">
+                            <div id="tituloDesafio">
+                                <p id="titulo"></p>
+                            </div>
+                            <div id="perguntaDesafio">
+
+                            </div>
+                            <div id="respostasDesafio">
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="direito" class="col-6">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front" id="frontCompras">
+                            <p>Compras</p>
+                        </div>
+                        <div id="backCompras">
+                            <div id="cabecalhoCompras">
+                                <p id="p1">Compras</p>
+                                <p id="p2"></p>
+
+                            </div>
+                            <div id="conteudoCompras">
+                                <p id="produto"></p>
+
+                                <div id="imagem">
+
+                                </div>
+                                <p id="preco"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../JS/Cartas.js"></script>
+
+
+
+</body>
+
+</html>
