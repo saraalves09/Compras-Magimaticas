@@ -1,0 +1,373 @@
+body{
+    background-image: url(../imagens/fundo.escolha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+#nav{
+    width: 100%;
+    height: 80px;
+    text-align: end;
+    margin-top: 45px;
+}
+
+#manual{
+    text-align: center;
+	width:	120px;
+	height: 50px;
+	border-radius: 50px;
+    font-size:18px;
+    background-color: #020250;
+    border: solid #020250;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#manual:hover{
+    background-color: #080888;
+    border: solid #080888;
+    width: 130px;
+}
+
+#encerrar{
+    text-align: center;
+	width:	120px;
+    height: 50px;
+    font-size: 18px;
+	border-radius: 50px;
+    background-color: #020250;
+    border: solid #020250;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#encerrar:hover{
+    background-color: #080888;
+    border: solid #080888;
+}
+
+#esquerdo{
+    padding-left: 0px;
+}
+
+
+.flip-container {
+    width: 550px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+
+/*CARTAS:*/
+
+.flip-container:hover  .flipper{
+    transform: rotateX(180deg);
+}
+
+.flipper{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.front, #backDesafio{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front, #backCompras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+#backDesafio{
+    transform: rotateX(180deg);
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+#backCompras{
+    padding: 20px;
+    transform: rotateX(180deg);
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.front{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 140px;
+    font-family: fonteQuadrinho;
+    text-shadow: -4.5px -2px #d8031c;
+    color: #020250;
+    position: absolute;
+    border-radius: 5px;
+}
+
+/*CONTEUDO CARTA DESAFIO:*/
+
+.front p{
+    margin-top: 150px;
+}
+
+#tituloDesafio{
+    flex: 30%;
+    font-size: 40px;
+    font-family: fonteQuadrinho;
+    text-shadow: -3.5px -2px #d8031c;
+    color: #020250;
+    padding-top: 30px;
+    
+}
+
+#botaoDesafio{
+    width: 200px;
+    height: 60px;
+}
+
+#perguntaDesafio{
+    flex: 35%;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+#respostasDesafio{
+    flex: 35%;
+    padding-top: 15px;
+}
+@font-face {
+    font-family: FonteQuadrinho;
+    src: url('fonteQuadrinho.otf');
+}
+
+
+/*BOTAO RESPOSTAS*/
+.respostasDesafio{
+	text-align: center;
+	width:	125px;
+	height: 55px;
+	border-radius: 40px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #d8031c;
+    border: solid #d8031c;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 5px;
+    
+}
+.respostasDesafio:hover{ 
+    background-color: #da172e;
+    border: solid #da172e;
+}
+
+.respostasDesafio:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.efeitoCorreta{
+    background-image: url(../imagens/fogos.gif);
+    background-position: 20px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+
+.efeitoIncorreta{
+    font-weight: bold;
+    background-image: url(../imagens/incorreta.gif);
+    background-position: 35px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+/*CORINGA*/
+.estiloCoringa{
+    background-image: url(../imagens/cartaCoringa.jpeg);
+    background-size: 550px 500px;
+    transform: rotateX(180deg);
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    font-weight: bold;
+    font-family: FonteQuadrinho;
+    flex: 100%;
+}
+
+.coringa{
+    padding-top: 40px;
+    font-size: 150px;
+}
+
+/*COMPRAS*/
+#cabecalhoCompras{
+    flex: 25%;
+    
+}
+
+#p1{
+    font-size: 40px;
+    font-size: 40px;
+    font-family: fonteQuadrinho;
+    text-shadow: -3.5px -2px #d8031c;
+    color: #020250;
+}
+
+#p2{
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #d8031c;
+    color: white;
+}
+
+#conteudoCompras{
+    flex: 75%;
+}
+
+#produto{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#preco{
+    font-weight: bold;
+    font-size: 30px;
+}
+.img{
+    padding-bottom: 50px;
+    height: 230px;
+}
+
+.loteria{
+    font-family: FonteQuadrinho;
+    text-shadow: -3.5px -2px yellow;
+    color: black; 
+}
+
+#charadas{
+    display: flex;
+    font-size: 25px;
+    padding-right: 20px;
+    padding-top: 30px;
+    background-color: white;
+    border: solid black;
+}
+.dinheiro{
+    background-image: url(../imagens/money.jpeg);
+    background-size: cover;
+
+}
+
+#conta{
+    flex: 50%;
+}
+
+#respostaCharada{
+    flex: 50%;
+}
+
+.inputs{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+.inputs:hover{
+    border: solid green;
+}
+
+#EnviarCharada{
+    text-align: center;
+	width:	270px;
+	height: 50px;
+	border-radius: 40px;
+	border-radius: 40px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #d8031c;
+    border: solid #d8031c;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 18px;
+}
+
+#EnviarCharada:hover{
+    background-color: #da172e;
+    border: solid #da172e;
+    width: 280px;
+    height: 55px;
+    font-size: 20px;
+}
+
+#EnviarCharada:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.corretaLoteria{
+    background-image: url(../imagens/loteria.dinheiro.gif);
+}
+
+#PatoDonald{
+    display: flex;
+}
+.LoteriaFrase{
+    color:black;
+    margin-top: 60px;
+    text-decoration: none;
+    flex: 50%;
+}
+
+#grifar{
+    background-color: green;
+}
+
+#pato{
+    flex: 50%;
+    width: 250px;
+}
+
+.incorretaLoteria{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: black;
+    margin-top: 60px;
+} 
