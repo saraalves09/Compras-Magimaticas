@@ -1,5 +1,5 @@
 body{
-    background-image: url(../imagens/fundo.escolha.jpg);
+    background-image: url(fundo.escolha.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -197,7 +197,7 @@ body{
 }
 
 .efeitoCorreta{
-    background-image: url(../imagens/fogos.gif);
+    background-image: url(fogos.gif);
     background-position: 20px;
     background-size: 200px;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ body{
 
 .efeitoIncorreta{
     font-weight: bold;
-    background-image: url(../imagens/incorreta.gif);
+    background-image: url(incorreta.gif);
     background-position: 35px;
     background-size: 200px;
     background-repeat: no-repeat;
@@ -214,7 +214,7 @@ body{
 
 /*CORINGA*/
 .estiloCoringa{
-    background-image: url(../imagens/cartaCoringa.jpeg);
+    background-image: url(cartaCoringa.jpeg);
     background-size: 550px 500px;
     transform: rotateX(180deg);
     background-color: white;
@@ -287,7 +287,7 @@ body{
     border: solid black;
 }
 .dinheiro{
-    background-image: url(../imagens/money.jpeg);
+    background-image: url(money.jpeg);
     background-size: cover;
 
 }
@@ -342,7 +342,7 @@ body{
 }
 
 .corretaLoteria{
-    background-image: url(../imagens/loteria.dinheiro.gif);
+    background-image: url(loteria.dinheiro.gif);
 }
 
 #PatoDonald{
