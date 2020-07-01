@@ -358,7 +358,7 @@ var jogada = 1;
 var cont;
 
 document.getElementById('frontDesafio').onmouseenter = function () {
-    if ((embaralhador == 44) || (jogada == 1)) {
+    if ((embaralhador == 43) || (jogada == 1)) {
         for (cont = 0; cont < 44; cont++) {
             numeros[cont] = ' ';
         }
@@ -802,4 +802,3 @@ function vetorAleatorio2() {
     } while (cont2 != 31);
     console.log('Sortidos Compras:')
     console.log(numeros2);
-}
